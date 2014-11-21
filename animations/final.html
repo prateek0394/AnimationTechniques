@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <title>Animation number -1</title>
+
+  <style>.tuna {
+  -webkit-animation: Web-gl_component 1s steps(12) infinite;
+  background: url(puma1.jpg) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  margin-left: -200px;
+  -webkit-transform: translateZ(0); 
+}
+
+@-webkit-keyframes Web-gl_component {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } 
+}
+
+.foreground, .midground, .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  translate3d(0,0,0); 
+}
+
+.foreground {
+  -webkit-animation: parallax_fg linear 10s infinite both;
+  background:  url(foreground_grass.png) 0 100% repeat-x;
+  z-index: 3;
+}
+
+@-webkit-keyframes parallax_fg {  
+  0% { background-position: -3584px 100%;} 
+  100% {background-position: 0 100%; } 
+}
+
+
+
+@-webkit-keyframes parallax_mg {  
+  0% { background-position: -3000px 100%;} 
+  100% {background-position: 0 100%; } 
+}
+.background {
+  background-image:url(2.jpg);
+  top:-400px;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  z-index: 1;
+  -webkit-animation: parallax_bg linear 40s infinite;
+}
+
+@-webkit-keyframes parallax_bg {
+  100% { background-position-x: 2400px, 2000px, 1800px, 1600px, 1200px;}
+}
+</style>
+</head>
+<body >
+
+  <div class="foreground"></div>
+
+<div class="midground">
+  <div class="tuna"></div>
+</div>
+
+<div class="background">
+</div>
+
+
+
+</body></html>

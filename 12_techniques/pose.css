@@ -1,0 +1,40 @@
+		body{
+background-color: whitesmoke;
+font-family: Calibri;
+font-size:14px;
+line-height: 30px;
+
+}
+#head{
+  padding-left: 100px;
+  margin-right: 50px;
+}
+#next{
+float:right;
+margin-right:30px;
+font-size: 18px;  
+}
+
+.mainbaseball{
+width:150px;height:262px;border:4px solid black;
+float:left;
+margin-right: 50px;
+margin-left: 60px;
+margin-top: 40px; 
+}
+.baseball {
+        background-image: url(Baseball_pitching_motion_2004.jpg);
+        height: 262px; /* width and height of each frame */
+        width: 150px;
+}
+.baseball {
+    -webkit-animation: objectanimate 1.2s steps(4,end) infinite;
+    animation: objectanimate 1s steps(10,end) infinite;
+}
+@-webkit-keyframes objectanimate { 
+        from { background-position: 749px 262px; }
+        to { background-position: 0 262px; } 
+}
+@keyframes objectanimate {
+        from { background-position: 0 0; }
+        to { background-position: 0 1000px; } /* negative of sprite sheet width */

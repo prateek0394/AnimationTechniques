@@ -1,0 +1,80 @@
+body{
+background-color: whitesmoke;
+font-family: Calibri;
+font-size:14px;
+line-height: 30px;
+
+}
+#head{
+  padding-left: 100px;
+  margin-right: 50px;
+}
+#next{
+float:right;
+margin-right:30px;
+font-size: 18px;  
+}
+.squashbody {
+  float:left;
+    height:600px;
+    width:600px;
+    background: white;
+    border: 4px black solid;
+    margin-right: 50px;
+}
+.squashbody{
+    overflow:hidden;
+}
+.object {
+    height:300px;
+    width:300px;
+    background:url("rat1_edited.jpg") center center no-repeat;
+    background-size:300px 300px;
+    z-index:-1;
+}
+
+.squashobject {
+     position: absolute;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 2.2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: animate1, animate2, animatesquashstretch;
+}
+@-webkit-keyframes animate1 {
+  0% { top: 89px; }
+  55% { top: 280px; }
+  100% { top: 89px; }
+}
+@-webkit-keyframes animate2 {
+  0% { left: 137px; }
+  100% { left: 137px; }
+}
+@-webkit-keyframes animatesquashstretch {
+  0% { -webkit-transform: scale(1,1); }
+  37% { -webkit-transform: scale(1,1); } 
+  52% { -webkit-transform: scale(1.1,0.8); }
+  63% { -webkit-transform: scale(1,1.2); }
+  100% { -webkit-transform: scale(1,1); }
+}
+.squashobject{
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 2.2s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-name: animate1, animate2, animatesquashstretch;
+}
+@-moz-keyframes animate1 {
+  0% { top: 89px; }
+  55% { top: 280px; }
+  100% { top: 89px; }
+}
+@-moz-keyframes animate2 {
+  0% { left: 137px; }
+  100% { left: 137px; }
+}
+@-moz-keyframes animatesquashstretch {
+  0% { -moz-transform: scale(1,1); }
+  37% { -moz-transform: scale(1,1); } 
+  52% { -moz-transform: scale(1.1,0.8); }
+  63% { -moz-transform: scale(1,1.2); }
+  100% { -moz-transform: scale(1,1); }
+}

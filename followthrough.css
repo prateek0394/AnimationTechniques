@@ -1,0 +1,44 @@
+body{
+background-color: whitesmoke;
+font-family: Calibri;
+font-size:14px;
+line-height: 30px;
+
+}
+#head{
+  padding-left: 100px;
+  margin-right: 50px;
+}
+#next{
+float:right;
+margin-right:30px;
+font-size: 18px;  
+}
+#anifoot{
+  font-weight: 600;
+  font-size: 16px;
+  position: absolute;
+  margin-left: -500px;
+  margin-top:150px;
+}
+.followbody {
+    background: white;
+    position: relative;
+    border: 2px solid #898989;
+    display:inline-block;
+    overflow:hidden;
+    height:500px;
+    width:600px;
+    float: left;
+    margin-right: 50px;
+}
+
+.object{
+  width: 6em; height: 6em; margin-left: 50px; border-radius: 3em; overflow: hidden; display: block;
+  margin-top:350px;
+  background:black;
+transition: all 1.3s cubic-bezier(0.500, -0.440, 0.670, 1.475);
+}
+.object:hover { -webkit-transform: translateY(-300px);
+-moz-transform: translateY(-300px);
+}

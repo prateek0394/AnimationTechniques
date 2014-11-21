@@ -1,0 +1,85 @@
+body{
+background-color: whitesmoke;
+font-family: Calibri;
+font-size:14px;
+line-height: 30px;
+
+}
+#head{
+  padding-left: 100px;
+  margin-right: 50px;
+}
+#next{
+float:right;
+margin-right:30px;
+font-size: 18px;  
+}
+.slowbody {
+  float:left;
+  margin-right: 50px;
+    background: url(Sunrise-Background.jpg);
+    background-size: 700px 400px;
+    position: relative;
+    border: 4px black solid;
+    overflow:hidden;
+    height:400px;
+    width:700px;
+}
+
+.sun {
+    height:7em;
+    width:7em;
+    border-radius: 3.5em;
+    background-color: #FDB813;
+    margin-left:50px;
+   }
+
+.sunriseanimate {
+    height:auto;
+    width:auto;
+    position: absolute;
+    -webkit-animation-name: animate1, animate2, animate3;
+    -webkit-animation-timing-function: cubic-bezier(0.6,0.8,1,0);
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name: animate1, animate2, animate3;
+    -moz-animation-timing-function:cubic-bezier(0.6,0.8,1,0);
+    -moz-animation-duration: 7s;
+    -moz-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% { top: 500px; }
+  40%{ top: 30px; }
+  60% { top: 30px; }
+  100% { top: 500px; }
+}
+
+
+@-webkit-keyframes animate2 {
+  0% { left: 250px; }
+  100% { left: 250px; }
+}
+@-webkit-keyframes animate3 {
+  0% { -webkit-transform: scale(1,1.1); }
+  50% { -webkit-transform: scale(1,1); }
+  100% { -webkit-transform: scale(1,1); }
+}
+
+@-moz-keyframes animate1 {
+  0% { top: 500px; }
+  40% { top: 30px; }
+  60% { top: 30px; }
+  100% { top: 500px; }
+}
+
+
+@-moz-keyframes animate2 {
+  0% { left: 250px; }
+  100% { left: 250px; }
+}
+@-moz-keyframes animate3 {
+  0% { -moz-transform: scale(1,1.1); }
+  50% { -moz-transform: scale(1,1); }
+  100% { -moz-transform: scale(1,1); }
+}
